@@ -12,7 +12,17 @@
   <body>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+      <button onclick='textChange()' class="button">Boom?</button>
     </div>
+    <article class="message" id='article'></article>
+    <article class="message" id='article'></article>
+    <article class="message" id='article'></article>
+    <article class="message" id='article'></article>
+    <article class="message" id='article'></article>
+    <script>
+      function textChange() {
+        document.getElementById('article').innerHTML = 'Booooom'; 
+      }
+    </script>
   </body>
 </html>
