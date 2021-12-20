@@ -14,14 +14,23 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button onclick='textChange()' class="button">Boom?</button>
     </div>
-    <article class="message" id='article'></article>
-    <article class="message" id='article'></article>
-    <article class="message" id='article'></article>
-    <article class="message" id='article'></article>
-    <article class="message" id='article'></article>
     <script>
       function textChange() {
-        document.getElementById('article').innerHTML = 'Booooom'; 
+        let x = document.createElement('article');
+        let y = document.createElement('article');
+        let z = document.createElement('article');
+        let w = document.createElement('article');
+        let v = document.createElement('article');
+        x.innerHTML = 'Boooom';
+        z.innerHTML = 'Boom';
+        w.innerHTML = 'Booooooooooom';
+        v.innerHTML = 'Booooooom';
+        y.innerHTML = 'Boooooooom';
+        document.body.appendChild(x);
+        document.body.appendChild(v);
+        document.body.appendChild(w);
+        document.body.appendChild(y);
+        document.body.appendChild(z);
       }
     </script>
   </body>
