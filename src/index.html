@@ -16,26 +16,12 @@
     </div>
     <script>
       function textChange() {
-        let x = document.createElement('article');
-        let y = document.createElement('article');
-        let z = document.createElement('article');
-        let w = document.createElement('article');
-        let v = document.createElement('article');
-        x.classList.add('message');
-        y.classList.add('message');
-        z.classList.add('message');
-        w.classList.add('message');
-        v.classList.add('message');
-        document.body.after(x);
-        document.body.after(v)
-        document.body.after(w);
-        document.body.after(y);
-        document.body.after(z);
-        x.append('Boooooom!!!');
-        y.append('Boooooom!!!');
-        z.append('Boooooom!!!');
-        w.append('Boooooom!!!');
-        v.append('Boooooom!!!');
+        for (let index = 0; index < 5; index++) {
+          let x = document.createElement('article');;
+          x.classList.add('message');
+          document.body.after(x);
+          x.append('Boooooom!!!');
+        }
       }
     </script>
   </body>
