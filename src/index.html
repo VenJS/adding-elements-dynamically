@@ -18,8 +18,8 @@
       function textChange() {
         for (let index = 0; index < 5; index++) {
           let x = document.createElement('article');
-          x.classList.add('message');
-          document.body.after(x);
+          x.setAttribute('class', 'message');
+          document.body.appendChild(x);
           x.append('Boooooom!!!');
         }
       }
